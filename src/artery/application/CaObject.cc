@@ -91,4 +91,22 @@ protected:
 
 Register_ResultFilter("camGenerationDeltaTime", CamGenerationDeltaTimeResultFilter)
 
+// Create a speed vector for CA service
+class CamSpeedResultFilter : public cObjectResultFilter
+{
+protected:
+    void receiveSignal(cResultFilter* prev, simtime_t_cref t, cObject* object, cObject* details) override
+    {
+        if (auto cam = dynamic_cast<CaObject*>(object)) {
+            HighFrequencyContainer_t hfc = cam->asn1()->cam.camParameters.highFrequencyContainer;
+            if(hfc.present == HighFrequencyContainer_PR_basicVehicleContainerHighFrequency){
+            	const auto speed = cam->asn1()->cam.camParameters.highFrequencyContainer.choice.basicVehicleContainerHighFrequency.speed.speedValue;
+            	fire(this, t, speed, details);
+            }
+        }
+    }
+};
+
+Register_ResultFilter("camSpeed", CamSpeedResultFilter)
+
 } // namespace artery
