@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+    <service type="artery.application.CaService" name="CAM">
+		<listener port="2001" />
+	</service>
+    <service type="AlertSenderService" name="Sender">
+        <listener port="8001" />
+        <filters><name pattern="flow.0" /></filters>
+    </service>
+    <service type="AlertReceiverService" name="Receiver">
+        <listener port="8001" />
+        <filters><name pattern="flow.0" match="inverse" /></filters>
+    </service>
+</services>

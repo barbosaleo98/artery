@@ -1,0 +1,972 @@
+version 2
+run General-0-20220830-15:51:46-5112
+attr configname General
+attr datetime 20220830-15:51:46
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CanvasWorld
+attr processid 5112
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.traci.core.version -1
+param *.traci.launcher.typename "\"PosixLauncher\""
+param *.traci.launcher.sumocfg "\"politecnico.sumo.cfg\""
+param *.traci.launcher.sumo "\"sumo-gui\""
+param *.node[*].wlan[*].typename "\"VanetNic\""
+param *.node[*].wlan[*].radio.channelNumber 180
+param *.node[*].wlan[*].radio.carrierFrequency "5.9 GHz"
+param *.node[*].wlan[*].radio.transmitter.power "200 mW"
+param *.node[*].middleware.updateInterval 0.1s
+param *.node[*].middleware.datetime "\"2022-08-16 15:00:00\""
+param *.node[*].middleware.services "xmldoc(\"services.xml\")"
+param *.node[*].middleware.DEN.useCases "xmldoc(\"den-use-cases.xml\")"
+param **.speedThreshold "2.0 mps"
+param *.withStoryboard true
+param *.storyboard.python "\"story\""
+param *.storyboard.canvas "\"CanvasWorld\""
+
+scalar CanvasWorld.traci.launcher port 60035
+scalar CanvasWorld.node[0].wlan[0].mac.rx ChannelLoad:timeavg 0.0021951197263398
+scalar CanvasWorld.node[0].wlan[0].mac rcvdPkFromLL:count 512
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, count"
+scalar CanvasWorld.node[0].wlan[0].mac rcvdPkFromLL:sum(packetBytes) 126576
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, sum(packetBytes)"
+scalar CanvasWorld.node[0].wlan[0].mac sentDownPk:count 159
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, count"
+scalar CanvasWorld.node[0].wlan[0].mac sentDownPk:sum(packetBytes) 39557
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, sum(packetBytes)"
+scalar CanvasWorld.node[0].wlan[0].mac rcvdPkFromHL:count 159
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, count"
+scalar CanvasWorld.node[0].wlan[0].mac rcvdPkFromHL:sum(packetBytes) 39557
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, sum(packetBytes)"
+scalar CanvasWorld.node[0].wlan[0].mac passedUpPk:count 512
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar CanvasWorld.node[0].wlan[0].mac passedUpPk:sum(packetBytes) 126576
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+statistic CanvasWorld.node[0].wlan[0].radio radioChannel:histogram
+field count 1
+field mean 180
+field stddev -nan
+field min 180
+field max 180
+field sum 180
+field sqrsum 32400
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, histogram"
+bin	-inf	0
+bin	179	0
+bin	180	1
+bin	181	0
+scalar CanvasWorld.node[0].wlan[0].radio transmissionState:count 636
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, count"
+scalar CanvasWorld.node[0].wlan[0].radio receptionState:count 1343
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, count"
+scalar CanvasWorld.node[0].wlan[0].radio radioMode:count 320
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, count"
+statistic CanvasWorld.node[0].wlan[0].radio symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr source symbolErrorRate
+attr title "Symbol error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic CanvasWorld.node[0].wlan[0].radio bitErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr source bitErrorRate
+attr title "Bit error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic CanvasWorld.node[0].wlan[0].radio packetErrorRate:histogram
+field count 512
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr source packetErrorRate
+attr title "Packet error rate, histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	512
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+statistic CanvasWorld.node[0].wlan[0].radio minSNIR:histogram
+field count 512
+field mean 768775.55167856
+field stddev 957254.81029549
+field min 45223.338330468
+field max 4526264.3579451
+field sum 393613082.45942
+field sqrsum 7.7084820502274e+14
+attr source minSNIR
+attr title "Min SNIR, histogram"
+bin	-inf	0
+bin	0	49
+bin	100000	125
+bin	200000	82
+bin	300000	52
+bin	400000	11
+bin	500000	19
+bin	600000	13
+bin	700000	39
+bin	800000	6
+bin	900000	1
+bin	1000000	3
+bin	1100000	1
+bin	1200000	1
+bin	1300000	3
+bin	1400000	7
+bin	1500000	7
+bin	1600000	5
+bin	1700000	4
+bin	1800000	4
+bin	1900000	6
+bin	2000000	5
+bin	2100000	3
+bin	2200000	2
+bin	2300000	2
+bin	2400000	0
+bin	2500000	3
+bin	2600000	0
+bin	2700000	1
+bin	2800000	1
+bin	2900000	54
+bin	3000000	0
+bin	3100000	0
+bin	3200000	0
+bin	3300000	1
+bin	3400000	0
+bin	3500000	0
+bin	3600000	0
+bin	3700000	0
+bin	3800000	1
+bin	3900000	0
+bin	4000000	0
+bin	4100000	0
+bin	4200000	0
+bin	4300000	0
+bin	4400000	0
+bin	4500000	1
+bin	4600000	0
+bin	4700000	0
+bin	4800000	0
+bin	4900000	0
+bin	5000000	0
+bin	5100000	0
+bin	5200000	0
+bin	5300000	0
+bin	5400000	0
+bin	5500000	0
+bin	5600000	0
+bin	5700000	0
+scalar CanvasWorld.node[0].middleware.DEN transmission:count 0
+attr source DenmSent
+scalar CanvasWorld.node[0].middleware.DEN reception:count 0
+attr source DenmReceived
+scalar CanvasWorld.node[1].wlan[0].mac.rx ChannelLoad:timeavg 0.0021605345211581
+scalar CanvasWorld.node[1].wlan[0].mac rcvdPkFromLL:count 513
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, count"
+scalar CanvasWorld.node[1].wlan[0].mac rcvdPkFromLL:sum(packetBytes) 127299
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, sum(packetBytes)"
+scalar CanvasWorld.node[1].wlan[0].mac sentDownPk:count 164
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, count"
+scalar CanvasWorld.node[1].wlan[0].mac sentDownPk:sum(packetBytes) 41172
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, sum(packetBytes)"
+scalar CanvasWorld.node[1].wlan[0].mac rcvdPkFromHL:count 164
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, count"
+scalar CanvasWorld.node[1].wlan[0].mac rcvdPkFromHL:sum(packetBytes) 41172
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, sum(packetBytes)"
+scalar CanvasWorld.node[1].wlan[0].mac passedUpPk:count 513
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar CanvasWorld.node[1].wlan[0].mac passedUpPk:sum(packetBytes) 127299
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+statistic CanvasWorld.node[1].wlan[0].radio radioChannel:histogram
+field count 1
+field mean 180
+field stddev -nan
+field min 180
+field max 180
+field sum 180
+field sqrsum 32400
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, histogram"
+bin	-inf	0
+bin	179	0
+bin	180	1
+bin	181	0
+scalar CanvasWorld.node[1].wlan[0].radio transmissionState:count 656
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, count"
+scalar CanvasWorld.node[1].wlan[0].radio receptionState:count 1355
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, count"
+scalar CanvasWorld.node[1].wlan[0].radio radioMode:count 330
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, count"
+statistic CanvasWorld.node[1].wlan[0].radio symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr source symbolErrorRate
+attr title "Symbol error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic CanvasWorld.node[1].wlan[0].radio bitErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr source bitErrorRate
+attr title "Bit error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic CanvasWorld.node[1].wlan[0].radio packetErrorRate:histogram
+field count 513
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr source packetErrorRate
+attr title "Packet error rate, histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	513
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+statistic CanvasWorld.node[1].wlan[0].radio minSNIR:histogram
+field count 513
+field mean 1179355.2616131
+field stddev 1086142.6216647
+field min 117425.61814231
+field max 5236831.8729136
+field sum 605009249.20752
+field sqrsum 1.3175302082109e+15
+attr source minSNIR
+attr title "Min SNIR, histogram"
+bin	-inf	0
+bin	0	0
+bin	100000	67
+bin	200000	64
+bin	300000	49
+bin	400000	28
+bin	500000	29
+bin	600000	22
+bin	700000	23
+bin	800000	13
+bin	900000	20
+bin	1000000	16
+bin	1100000	4
+bin	1200000	3
+bin	1300000	4
+bin	1400000	8
+bin	1500000	9
+bin	1600000	5
+bin	1700000	3
+bin	1800000	7
+bin	1900000	4
+bin	2000000	9
+bin	2100000	6
+bin	2200000	2
+bin	2300000	5
+bin	2400000	6
+bin	2500000	6
+bin	2600000	4
+bin	2700000	4
+bin	2800000	4
+bin	2900000	83
+bin	3000000	0
+bin	3100000	0
+bin	3200000	0
+bin	3300000	1
+bin	3400000	0
+bin	3500000	0
+bin	3600000	1
+bin	3700000	1
+bin	3800000	0
+bin	3900000	0
+bin	4000000	0
+bin	4100000	0
+bin	4200000	0
+bin	4300000	0
+bin	4400000	1
+bin	4500000	0
+bin	4600000	0
+bin	4700000	0
+bin	4800000	0
+bin	4900000	1
+bin	5000000	0
+bin	5100000	0
+bin	5200000	1
+bin	5300000	0
+bin	5400000	0
+bin	5500000	0
+bin	5600000	0
+bin	5700000	0
+bin	5800000	0
+bin	5900000	0
+bin	6000000	0
+bin	6100000	0
+bin	6200000	0
+bin	6300000	0
+bin	6400000	0
+bin	6500000	0
+bin	6600000	0
+scalar CanvasWorld.node[1].middleware.DEN transmission:count 0
+attr source DenmSent
+scalar CanvasWorld.node[1].middleware.DEN reception:count 0
+attr source DenmReceived
+scalar CanvasWorld.node[2].wlan[0].mac.rx ChannelLoad:timeavg 0.0020714035087719
+scalar CanvasWorld.node[2].wlan[0].mac rcvdPkFromLL:count 495
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, count"
+scalar CanvasWorld.node[2].wlan[0].mac rcvdPkFromLL:sum(packetBytes) 124085
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, sum(packetBytes)"
+scalar CanvasWorld.node[2].wlan[0].mac sentDownPk:count 180
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, count"
+scalar CanvasWorld.node[2].wlan[0].mac sentDownPk:sum(packetBytes) 44340
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, sum(packetBytes)"
+scalar CanvasWorld.node[2].wlan[0].mac rcvdPkFromHL:count 180
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, count"
+scalar CanvasWorld.node[2].wlan[0].mac rcvdPkFromHL:sum(packetBytes) 44340
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, sum(packetBytes)"
+scalar CanvasWorld.node[2].wlan[0].mac passedUpPk:count 495
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar CanvasWorld.node[2].wlan[0].mac passedUpPk:sum(packetBytes) 124085
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+statistic CanvasWorld.node[2].wlan[0].radio radioChannel:histogram
+field count 1
+field mean 180
+field stddev -nan
+field min 180
+field max 180
+field sum 180
+field sqrsum 32400
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, histogram"
+bin	-inf	0
+bin	179	0
+bin	180	1
+bin	181	0
+scalar CanvasWorld.node[2].wlan[0].radio transmissionState:count 720
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, count"
+scalar CanvasWorld.node[2].wlan[0].radio receptionState:count 1351
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, count"
+scalar CanvasWorld.node[2].wlan[0].radio radioMode:count 362
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, count"
+statistic CanvasWorld.node[2].wlan[0].radio symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr source symbolErrorRate
+attr title "Symbol error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic CanvasWorld.node[2].wlan[0].radio bitErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr source bitErrorRate
+attr title "Bit error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic CanvasWorld.node[2].wlan[0].radio packetErrorRate:histogram
+field count 495
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr source packetErrorRate
+attr title "Packet error rate, histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	495
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+statistic CanvasWorld.node[2].wlan[0].radio minSNIR:histogram
+field count 495
+field mean 1304794.7249752
+field stddev 1114777.3664812
+field min 100086.57213804
+field max 5366195.9815001
+field sum 645873388.86273
+field sqrsum 1.4566401077384e+15
+attr source minSNIR
+attr title "Min SNIR, histogram"
+bin	-inf	0
+bin	0	0
+bin	100000	56
+bin	200000	32
+bin	300000	31
+bin	400000	18
+bin	500000	37
+bin	600000	18
+bin	700000	48
+bin	800000	19
+bin	900000	18
+bin	1000000	20
+bin	1100000	7
+bin	1200000	6
+bin	1300000	8
+bin	1400000	7
+bin	1500000	4
+bin	1600000	6
+bin	1700000	8
+bin	1800000	8
+bin	1900000	6
+bin	2000000	7
+bin	2100000	6
+bin	2200000	7
+bin	2300000	12
+bin	2400000	13
+bin	2500000	10
+bin	2600000	9
+bin	2700000	7
+bin	2800000	6
+bin	2900000	39
+bin	3000000	2
+bin	3100000	1
+bin	3200000	0
+bin	3300000	1
+bin	3400000	2
+bin	3500000	0
+bin	3600000	0
+bin	3700000	1
+bin	3800000	2
+bin	3900000	0
+bin	4000000	2
+bin	4100000	1
+bin	4200000	1
+bin	4300000	1
+bin	4400000	1
+bin	4500000	1
+bin	4600000	0
+bin	4700000	1
+bin	4800000	1
+bin	4900000	0
+bin	5000000	1
+bin	5100000	0
+bin	5200000	2
+bin	5300000	1
+bin	5400000	0
+bin	5500000	0
+bin	5600000	0
+bin	5700000	0
+bin	5800000	0
+bin	5900000	0
+bin	6000000	0
+bin	6100000	0
+bin	6200000	0
+bin	6300000	0
+bin	6400000	0
+bin	6500000	0
+bin	6600000	0
+bin	6700000	0
+scalar CanvasWorld.node[2].middleware.DEN transmission:count 0
+attr source DenmSent
+scalar CanvasWorld.node[2].middleware.DEN reception:count 0
+attr source DenmReceived
+scalar CanvasWorld.node[3].wlan[0].mac.rx ChannelLoad:timeavg 0.0019845919477693
+scalar CanvasWorld.node[3].wlan[0].mac rcvdPkFromLL:count 478
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, count"
+scalar CanvasWorld.node[3].wlan[0].mac rcvdPkFromLL:sum(packetBytes) 119794
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, sum(packetBytes)"
+scalar CanvasWorld.node[3].wlan[0].mac sentDownPk:count 185
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, count"
+scalar CanvasWorld.node[3].wlan[0].mac sentDownPk:sum(packetBytes) 46555
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, sum(packetBytes)"
+scalar CanvasWorld.node[3].wlan[0].mac rcvdPkFromHL:count 185
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, count"
+scalar CanvasWorld.node[3].wlan[0].mac rcvdPkFromHL:sum(packetBytes) 46555
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, sum(packetBytes)"
+scalar CanvasWorld.node[3].wlan[0].mac passedUpPk:count 478
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar CanvasWorld.node[3].wlan[0].mac passedUpPk:sum(packetBytes) 119794
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+statistic CanvasWorld.node[3].wlan[0].radio radioChannel:histogram
+field count 1
+field mean 180
+field stddev -nan
+field min 180
+field max 180
+field sum 180
+field sqrsum 32400
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, histogram"
+bin	-inf	0
+bin	179	0
+bin	180	1
+bin	181	0
+scalar CanvasWorld.node[3].wlan[0].radio transmissionState:count 740
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, count"
+scalar CanvasWorld.node[3].wlan[0].radio receptionState:count 1327
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, count"
+scalar CanvasWorld.node[3].wlan[0].radio radioMode:count 372
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, count"
+statistic CanvasWorld.node[3].wlan[0].radio symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr source symbolErrorRate
+attr title "Symbol error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic CanvasWorld.node[3].wlan[0].radio bitErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr source bitErrorRate
+attr title "Bit error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic CanvasWorld.node[3].wlan[0].radio packetErrorRate:histogram
+field count 478
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr source packetErrorRate
+attr title "Packet error rate, histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	478
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+statistic CanvasWorld.node[3].wlan[0].radio minSNIR:histogram
+field count 478
+field mean 819220.14825893
+field stddev 1120660.7990092
+field min 45225.06749546
+field max 5764074.3708563
+field sum 391587230.86777
+field sqrsum 9.1985120813771e+14
+attr source minSNIR
+attr title "Min SNIR, histogram"
+bin	-inf	0
+bin	0	54
+bin	100000	87
+bin	200000	70
+bin	300000	59
+bin	400000	33
+bin	500000	19
+bin	600000	16
+bin	700000	17
+bin	800000	4
+bin	900000	12
+bin	1000000	10
+bin	1100000	6
+bin	1200000	5
+bin	1300000	7
+bin	1400000	2
+bin	1500000	3
+bin	1600000	2
+bin	1700000	1
+bin	1800000	2
+bin	1900000	1
+bin	2000000	5
+bin	2100000	2
+bin	2200000	4
+bin	2300000	3
+bin	2400000	2
+bin	2500000	2
+bin	2600000	5
+bin	2700000	4
+bin	2800000	2
+bin	2900000	9
+bin	3000000	0
+bin	3100000	0
+bin	3200000	1
+bin	3300000	0
+bin	3400000	1
+bin	3500000	0
+bin	3600000	0
+bin	3700000	2
+bin	3800000	2
+bin	3900000	3
+bin	4000000	4
+bin	4100000	3
+bin	4200000	5
+bin	4300000	4
+bin	4400000	0
+bin	4500000	1
+bin	4600000	0
+bin	4700000	0
+bin	4800000	0
+bin	4900000	1
+bin	5000000	0
+bin	5100000	1
+bin	5200000	1
+bin	5300000	0
+bin	5400000	0
+bin	5500000	0
+bin	5600000	0
+bin	5700000	1
+bin	5800000	0
+bin	5900000	0
+bin	6000000	0
+bin	6100000	0
+bin	6200000	0
+bin	6300000	0
+bin	6400000	0
+bin	6500000	0
+bin	6600000	0
+bin	6700000	0
+bin	6800000	0
+bin	6900000	0
+bin	7000000	0
+bin	7100000	0
+bin	7200000	0
+scalar CanvasWorld.node[3].middleware.DEN transmission:count 0
+attr source DenmSent
+scalar CanvasWorld.node[3].middleware.DEN reception:count 0
+attr source DenmReceived
+scalar CanvasWorld.radioMedium.propagation "Arrival computation count" 1998
+scalar CanvasWorld.radioMedium "transmission count" 688
+scalar CanvasWorld.radioMedium "radio frame send count" 1998
+scalar CanvasWorld.radioMedium "reception computation count" 1998
+scalar CanvasWorld.radioMedium "interference computation count" 6686
+scalar CanvasWorld.radioMedium "reception decision computation count" 1998
+scalar CanvasWorld.radioMedium "listening decision computation count" 2690
+scalar CanvasWorld.radioMedium "reception cache hit" 85.714285714286
+attr unit %
+scalar CanvasWorld.radioMedium "interference cache hit" 66.666666666667
+attr unit %
+scalar CanvasWorld.radioMedium "noise cache hit" 0
+attr unit %
+scalar CanvasWorld.radioMedium "snir cache hit" 50
+attr unit %
+scalar CanvasWorld.radioMedium "reception decision cache hit" 50
+attr unit %
+scalar CanvasWorld.radioMedium "reception result cache hit" 0
+attr unit %
+

@@ -1,0 +1,114 @@
+file 198431 1663431263                                          
+version 2
+run Obstacles-0-20220917-13:13:45-6292
+attr configname Obstacles
+attr datetime 20220917-13:13:45
+attr experiment Obstacles
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network CanvasWorld
+attr processid 6292
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.withPhysicalEnvironment true
+param *.physicalEnvironment.config "xmldoc(\"obstacles.xml\")"
+param *.traci.core.version -1
+param *.traci.launcher.typename "\"PosixLauncher\""
+param *.traci.launcher.sumocfg "\"politecnico.sumo.cfg\""
+param *.traci.launcher.sumo "\"sumo-gui\""
+param *.node[*].wlan[*].typename "\"VanetNic\""
+param *.node[*].wlan[*].radio.channelNumber 180
+param *.node[*].wlan[*].radio.carrierFrequency "5.9 GHz"
+param *.node[*].wlan[*].radio.transmitter.power "200 mW"
+param *.node[*].middleware.updateInterval 0.1s
+param *.node[*].middleware.datetime "\"2022-08-16 15:00:00\""
+param *.node[*].middleware.services "xmldoc(\"services.xml\")"
+param *.withStoryboard true
+param *.storyboard.python "\"story\""
+param *.storyboard.canvas "\"CanvasWorld\""
+param **.safeDist "150.0 m"
+
+vector 0 CanvasWorld.node[0].middleware.CAM transmission:vector(camStationId) ETV
+attr source CamSent
+vector 1 CanvasWorld.node[0].middleware.CAM transmission:vector(camGenerationDeltaTime) ETV
+attr source CamSent
+vector 2 CanvasWorld.node[0].middleware.CAM transmission:vector(camSpeed) ETV
+attr source CamSent
+vector 3 CanvasWorld.node[1].middleware.CAM transmission:vector(camStationId) ETV
+attr source CamSent
+vector 4 CanvasWorld.node[1].middleware.CAM transmission:vector(camGenerationDeltaTime) ETV
+attr source CamSent
+vector 5 CanvasWorld.node[1].middleware.CAM transmission:vector(camSpeed) ETV
+attr source CamSent
+vector 6 CanvasWorld.node[0].middleware.CAM reception:vector(camStationId) ETV
+attr source CamReceived
+vector 7 CanvasWorld.node[0].middleware.CAM reception:vector(camGenerationDeltaTime) ETV
+attr source CamReceived
+vector 8 CanvasWorld.node[0].middleware.CAM reception:vector(camSpeed) ETV
+attr source CamReceived
+vector 9 CanvasWorld.node[1].middleware.CAM reception:vector(camStationId) ETV
+attr source CamReceived
+vector 10 CanvasWorld.node[1].middleware.CAM reception:vector(camGenerationDeltaTime) ETV
+attr source CamReceived
+vector 11 CanvasWorld.node[1].middleware.CAM reception:vector(camSpeed) ETV
+attr source CamReceived
+vector 12 CanvasWorld.node[2].middleware.CAM transmission:vector(camStationId) ETV
+attr source CamSent
+vector 13 CanvasWorld.node[2].middleware.CAM transmission:vector(camGenerationDeltaTime) ETV
+attr source CamSent
+vector 14 CanvasWorld.node[2].middleware.CAM transmission:vector(camSpeed) ETV
+attr source CamSent
+vector 15 CanvasWorld.node[2].middleware.CAM reception:vector(camStationId) ETV
+attr source CamReceived
+vector 16 CanvasWorld.node[2].middleware.CAM reception:vector(camGenerationDeltaTime) ETV
+attr source CamReceived
+vector 17 CanvasWorld.node[2].middleware.CAM reception:vector(camSpeed) ETV
+attr source CamReceived
+vector 18 CanvasWorld.node[3].middleware.CAM reception:vector(camStationId) ETV
+attr source CamReceived
+vector 19 CanvasWorld.node[3].middleware.CAM reception:vector(camGenerationDeltaTime) ETV
+attr source CamReceived
+vector 20 CanvasWorld.node[3].middleware.CAM reception:vector(camSpeed) ETV
+attr source CamReceived
+vector 21 CanvasWorld.node[3].middleware.CAM transmission:vector(camStationId) ETV
+attr source CamSent
+vector 22 CanvasWorld.node[3].middleware.CAM transmission:vector(camGenerationDeltaTime) ETV
+attr source CamSent
+vector 23 CanvasWorld.node[3].middleware.CAM transmission:vector(camSpeed) ETV
+attr source CamSent
+vector 24 CanvasWorld.node[1].middleware.Receiver speedValues:vector ETV
+vector 25 CanvasWorld.node[3].middleware.Receiver speedValues:vector ETV
+vector 26 CanvasWorld.node[2].middleware.Receiver speedValues:vector ETV
+0	3906 4564 6 20770 0.271518936497 55.571518936497 135 2546248239 2546248239 343743512265 8.7525631277243e+20
+2	8470 3649 6 20770 0.271518936497 55.571518936497 135 8 1200 110066 99980324
+1	12119 3872 6 20770 0.271518936497 55.571518936497 135 420 65356 5372308 263129517808
+6	15991 8944 490 20835 10.279652610472 55.628489368973 260 1897133962 2628931110 570866312350 1.2768809311633e+21
+8	24935 7158 490 20835 10.279652610472 55.628489368973 260 8 1200 194377 166085267
+7	32093 7559 490 20835 10.279652610472 55.628489368973 260 220 65356 7949684 392994127184
+3	39652 4788 474 24480 10.279172503343 70.379172503343 139 2051556033 2051556033 285166288587 5.8503461975888e+20
+5	44440 3824 474 24480 10.279172503343 70.379172503343 139 8 1200 103175 83403499
+4	48264 4067 474 24480 10.279172503343 70.379172503343 139 320 65256 4694292 217356167312
+9	52331 12114 511 24471 10.371999045639 70.228761059429 352 1897133962 2628931110 833583208495 2.0108880979896e+21
+11	64445 10082 511 24471 10.371999045639 70.228761059429 352 8 1200 288991 259932465
+10	74527 10630 511 24471 10.371999045639 70.228761059429 352 220 65356 10932544 493517203104
+24	85157 9630 5376 20887 31.971727309696 55.691726395931 238 5.8937626169735 11.970249923589 1839.4629727981 14344.030771051
+12	94787 4956 1825 25694 20.222232138552 80.822232138552 139 2628931110 2628931110 365421424290 9.6066775057649e+20
+14	99743 3989 1825 25694 20.222232138552 80.822232138552 139 8 1199 102610 81751616
+13	103732 4234 1825 25694 20.222232138552 80.822232138552 139 220 65356 4443792 201156765312
+15	107966 12150 1873 25679 20.371999208414 80.528760748579 342 1897133962 2546248239 721999058870 1.5465125315697e+21
+17	120116 9839 1873 25679 20.371999208414 80.528760748579 342 8 1200 289221 261981321
+16	129955 10365 1873 25679 20.371999208414 80.528760748579 342 320 65356 10587144 477530883104
+26	140320 9628 5386 20892 31.971727633709 55.691726639645 238 7.3205638032697 11.98558081653 2036.1846353335 17722.510899705
+21	149948 4955 4305 25798 30.228280695947 82.528280695947 138 1897133962 1897133962 261804486756 4.9667818322879e+20
+23	154903 4032 4305 25798 30.228280695947 82.528280695947 138 8 1200 118522 112593184
+22	158935 4233 4305 25798 30.228280695947 82.528280695947 138 620 65256 3420520 119356328960
+18	163168 9646 4287 25710 30.179652758374 80.822712191088 271 2051556033 2628931110 655763650233 1.6053506283409e+21
+20	172814 7767 4287 25710 30.179652758374 80.822712191088 271 589 1200 212679 170526811
+19	180581 8221 4287 25710 30.179652758374 80.822712191088 271 220 65356 7721840 348933197920
+25	188802 9628 5381 20897 31.971727614242 55.691726673026 238 1.1371475675743 11.997781284489 1876.1676308001 17879.869322605
+

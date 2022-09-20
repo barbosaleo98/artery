@@ -1,0 +1,8 @@
+<routes>
+    <vType id="car" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="12"/>
+
+    <route id="route" color="1,1,0" edges="263502998#1 407975489#0 -1042695859#0 -407975479 -317080769#9 -317080769#8 -317080769#6 -317080769#5 24603088#0 24603088#1 24603088#2 24603088#3 24603088#4 24603088#5 24603088#6"/>
+    
+    <flow id="flow" type="car" route="route" begin="0" period="5" number="6" departSpeed="0"/>
+
+</routes>

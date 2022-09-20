@@ -1,0 +1,3 @@
+### A reminder on how to use the ConvertOsmToInetObstacles tool as presented in: https://github.com/panagis/ConvertOsmToInetObstacles 
+
+./ConvertOsmToInetObstacles.sh ../scenarios/politecnico/politecnico.net.xml ../scenarios/politecnico/politecnico.poly.xml obstacles.xml 3
